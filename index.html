@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="clock" class="digital-clock"></div>
+    
+    <script>
+        setInterval(() => {
+            let date = new Date()
+            let clock = document.getElementById('clock')
+            clock.innerHTML =
+              date.getHours()+":"+
+              date.getMinutes()+":"+
+              date.getSeconds()
+        }, 1000);
+    </script>
+</body>
+  </html>
